@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #C5DDEB;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  background: #444753;
+  border-radius: 5px;
+  height: 640px;
+}
+/* .profile{
+  background-color:#86BB71;
+  border-radius: 10px;
+} */
+
+.people-list {
+  width: 300px;
+  float: left;
+  height: 570px;
+  border-radius: 5px;
+}
+.people-list .search {
+  padding: 10px;
+}
+.people-list .list .a-list{
+  decoration:none;
+  cursor:pointer;
+  color: white;
+}
+.people-list input {
+  border-radius: 3px;
+  border: none;
+  padding-left: 10px;
+  color: white;
+  background: #6A6C75;
+  width: 90%;
+  font-size: 14px;
+}
+.people-list .fa-search {
+  position: relative;
+  left: -25px;
+}
+.people-list ul {
+  padding: 10px;
+  margin-left: 10px;
+  height: 385px;
+  overflow-y: scroll;
+}
+.people-list ul::-webkit-scrollbar{
+  display: none;
+}
+.people-list ul{
+  -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.people-list ul li {
+  padding-bottom: 10px;
+
+}
+.people-list ul li:hover{
+  background-color: #86BB71;
+}
+.people-list img {
+  float: left;
+}
+.people-list .about {
+  float: left;
+  margin-top: 8px;
+}
+.people-list .about {
+  padding-left: 8px;
+}
+.people-list .status {
+  color: #92959E;
+  font-size: 12px;
+}
+.people-list h5{
+  margin-left: 10px
+}
+.row{
+  margin-bottom: 0px;
+}
+
+.chat {
+  width: 700px;
+  height: 570px;
+  float: left;
+  background: #F2F5F8;
+  /* border-top-right-radius: 5px; */
+  border-bottom-right-radius: 5px;
+  color: #434651;
+}
+.chat .chat-header {
+  padding: 20px;
+  border-bottom: 2px solid white;
+  height: 85px;
+}
+.chat .chat-header img {
+  float: left;
+}
+.chat .chat-header .chat-about {
+  float: left;
+  padding-left: 10px;
+  margin-top: 6px;
+}
+.chat .chat-header .chat-with {
+  font-weight: bold;
+  font-size: 16px;
+}
+.chat .chat-header .chat-num-messages {
+  color: #92959E;
+}
+.chat .chat-header i {
+  float: right;
+  /* color: #D8DADF; */
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.chat .chat-history {
+  padding: 30px 30px 20px;
+  border-bottom: 2px solid white;
+  overflow-y: scroll;
+  height: 400px;
+}
+.chat .chat-history .message-data {
+  margin-bottom: 15px;
+}
+.chat .chat-history .message-data-time {
+  color: #a8aab1;
+  padding-left: 6px;
+}
+.chat .chat-history .message {
+  color: white;
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  width: 90%;
+  position: relative;
+  word-wrap: break-word;
+}
+.chat .chat-history .message:after {
+  bottom: 100%;
+  left: 7%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #86BB71;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.chat .chat-history .my-message {
+  background: #86BB71;
+}
+.chat .chat-history .other-message {
+  background: #94C2ED;
+}
+.chat .chat-history .other-message:after {
+  border-bottom-color: #94C2ED;
+  left: 93%;
+}
+.chat .chat-message {
+  padding: 15px;
+  height: 85px;
+}
+.chat .chat-message i{
+  padding: 5px;
+}
+#send-btn{
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.chat .chat-message textarea {
+  width: 80%;
+  border: none;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font: 18px "Lato", Arial, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  border-radius: 50px;
+  resize: none;
+}
+.chat .chat-message .fa-file-o, .chat .chat-message .fa-file-image-o {
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+}
+.chat .chat-message button {
+  float: right;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #86BB71;
+}
+/* .chat .chat-message button:hover {
+  color: #75b1e8;
+} */
+
+.online, .offline, .me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: #86BB71;
+}
+
+.offline {
+  color: #E38968;
+}
+
+.me {
+  color: #94C2ED;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 18%;
+  left: 70%;
+}
+.fa-users, .fa-bell{
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+.fa-sign-out ,a{
+  cursor: pointer;
+  text-decoration: none;
+  margin-top:20px;
+  color: inherit;
+}
+.reddot{
+  color: red;
+  margin-top: 5px;
+  font-size: 5px;
+}
+.noMessage{
+  opacity: 0.4;
+  font-size: 15px;
+  text-align: center;
+}
+.file{
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+.smily{
+  margin-bottom: 35px;
+  color: black;
+  margin-right: 10px;
+}
+#friend-list{
+    float: left;
+    list-style: none;
+    margin-top: -3px;
+    padding: 0;
+    width: 190px;
+    position: absolute;
+    color: black;
+    height: auto;
+    overflow: scroll;
+    background-color: whitesmoke;
+    /* -ms-overflow-style: none;
+      scrollbar-width: none; */
+}
+/* #friend-list::-webkit-scrollbar{
+  display: none;
+} */
+#friend-list li{
+  padding: 15px;
+  font-size: 14px;
+}
+#suggesstion-box{
+  display: block;
+}
+.search-item{
+  cursor: pointer;
+}
+.person_block, .check{
+  display: none !important;
+}
+.dropdown-content li{
+  padding: 15px;
+}
+
+.badge1 {
+   position:relative;
+}
+.badge1:after {
+   content: attr(data-badge);
+   position:absolute;
+   top:-7px;
+   right:-7px;
+   font-size: 10px;
+   background:blue;
+   color:white;
+   width:20px;
+   height:20px;
+   text-align:center;
+   line-height:18px;
+   border-radius:50%;
+   box-shadow:0 0 1px #333;
+}
+.hrmargin{
+  margin: 0px;
+}
+.requestedUser{
+  font-weight: bold;
+  font-size: 16px;
+  background-color: whitesmoke;
+  width: 300px !important;
+  padding: 10px !important;
+}
